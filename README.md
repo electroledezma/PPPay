@@ -1,5 +1,5 @@
 # Basic payment
-//This is the first PHP code, intended as an application for basic payments, includes a 4-steps algorithm for tests of PSE (saving and //current accounts).
+%This is the first PHP code, intended as an application for basic payments, includes a 4-steps algorithm for tests of PSE (saving and current accounts).
 
 <?php
 
