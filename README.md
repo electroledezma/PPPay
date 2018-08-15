@@ -4,6 +4,10 @@ My name is Heicer Ledezma Leudo, a man passionate for learning who uses knowledg
 
 <?php
 
+# Seleccion del banco
+Tipo cliente: persona,
+Lista bancos: Banco Union Colombiano,
+
 #Variable Numerica
 $numero = 5;
 echo "Esto es una variable Numero: $numero<br>";
