@@ -4,9 +4,41 @@ My name is Heicer Ledezma Leudo, a man passionate for learning who uses knowledg
 
 <?php
 
-print "<h1>Mi primer codigo PHP!</h1>";
+#Variable Numerica
+$numero = 5;
+echo "Esto es una variable Numero: $numero<br>";
+var_dump($numero);
+echo "<br><br>";
 
-echo "<p>Mi segundo codigo PHP!</p>", "Mi tercer codigo PHP!";
+#Variable textual
+$palabra = "palabra";
+echo "Esto es una variable textual: $palabra<br>";
+var_dump($palabra);
+echo "<br><br>";
 
+#Variable booleana
+$booleana = false;
+echo "Esto es una variable booleana: $booleana<br>";
+var_dump($booleana);
+echo "<br><br>";
 
+#Variable Arreglo
+$colores = array("rojo","amarillo");
+echo "Esto es una variable arreglo: $colores[1]<br>";
+var_dump($colores);
+echo "<br><br>";
 
+#Variable arreglo con propiedades
+$verduras = array("verdura1"=>"lechuga","verdura2"=>"cebolla");
+echo "Esto es una variable arreglo con propiedades: $verduras[verdura1]";
+echo "<br><br>";
+
+#Variables objeto
+$frutas = (object)["fruta1"=>"pera","fruta2"=>"manzana"];
+echo "Esto es una variable objeto: $frutas->fruta1<br>";
+var_dump($frutas);
+echo "<br><br>";
+
+// Comentarios en PHP
+
+?>
