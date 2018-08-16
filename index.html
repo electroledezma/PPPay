@@ -1,1 +1,114 @@
 Mi primer codigo PHP!
+
+<html><head>
+ <title>Place to Pay</title>
+ <link rel="shortcut icon" href="favicon.ico">
+ <style>
+  body           {font-family        : sans-serif;
+                  margin-left        : 30px;
+                  margin-right       : 30px;
+                  background-color   : #d4ecfb;
+                 }
+  td             {font-family        : sans-serif;
+                 }
+  td.t           {font-family        : sans-serif;
+                  background-color   : #ffffff;
+                 }
+  td.tt          {font-family        : sans-serif;
+                  background-color   : #dddddd;
+                 }
+  input          {font-family        : sans-serif;
+                  font-size          : 15px;
+                 }
+                 
+ </style>
+</head>
+<body>
+<br>
+<div align="center"><h1>Truth</h1>
+
+<table cellspacing="0" cellpadding="4" border="0">
+ <tbody><tr>
+  <td><i>"Form for Payments"<br>&nbsp;&nbsp;&nbsp;&nbsp; This table must be fullfiled by the user</i></td><td width="40">&nbsp;</td>
+ </tr>
+ <tr>
+  <td colspan="2" align="right">Heicer Ledezma<i>electroledezma@gmail.com</i>, 2018</td>
+ </tr>
+</tbody></table>
+</div>
+<div align="right"><a href="about.html" target="blank">about</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div>
+<br><br>
+<table cellspacing="0" cellpadding="5" border="0">
+ <tbody><tr>
+  <td>&nbsp;</td><td align="center"><b>Input Data</b><br></td><td width="50%">&nbsp;</td>
+ </tr>
+ <tr>
+  <td>&nbsp;</td>
+  <td>
+   <table cellspacing="0" cellpadding="2" border="1">
+    <tbody><tr>
+     <td class="t">&nbsp;variables:</td><td class="t" colspan="4">&nbsp;a,b,c,...,z</td>
+    </tr>
+    <tr>
+     <td class="t">&nbsp;constants:</td><td class="t" colspan="4">&nbsp;T (or 1) or F (or 0)</td>
+    </tr>
+    <tr>
+     <td class="t">&nbsp;unary operator:</td><td class="tt" align="center">&nbsp;&nbsp;~&nbsp;&nbsp;</td><td class="t" width="50" align="center">¬</td><td class="t" width="50" align="center">1</td><td class="t">&nbsp;not (negation)</td>
+    </tr>
+    <tr>
+     <td class="t" rowspan="7" valign="top" nowrap="">&nbsp;binary operators:&nbsp;&nbsp;&nbsp;</td><td class="tt" align="center">&amp;</td><td class="t" align="center">∧</td><td class="t" align="center">2</td><td class="t">&nbsp;and (conjunction)</td>
+    </tr>
+    <tr>
+     <td class="tt" align="center">|</td><td class="t" align="center">|</td><td class="t" align="center">2</td><td class="t">&nbsp;NAND (not and)</td>
+    </tr>
+    <tr>
+     <td class="tt" align="center">+</td><td class="t" align="center">∨</td><td class="t" align="center">3</td><td class="t">&nbsp;or (disjunction)</td>
+    </tr>
+    <tr>
+     <td class="tt" align="center">-</td><td class="t" align="center">↓</td><td class="t" align="center">3</td><td class="t">&nbsp;NOR (not or)</td>
+    </tr>
+    <tr>
+     <td class="tt" align="center">#</td><td class="t" align="center">⊕</td><td class="t" align="center">3</td><td class="t">&nbsp;XOR (exclusive or)</td>
+    </tr>
+    <tr>
+     <td class="tt" align="center">&gt;</td><td class="t" align="center">→</td><td class="t" align="center">4</td><td class="t">&nbsp;if (implication)</td>
+    </tr>
+    <tr>
+     <td class="tt" align="center">=</td><td class="t" align="center">↔</td><td class="t" align="center">5</td><td class="t">&nbsp;if and only if (biconditional)</td>
+    </tr>
+    <tr>
+     <td class="t">&nbsp;grouping:</td><td class="t" colspan="4" nowrap="">&nbsp;(), [], or {} may used to group expressions to change the order of evaluation&nbsp;</td>
+    </tr>
+   </tbody></table>
+  </td>
+  <td>&nbsp;</td>
+ </tr>
+ <tr>   
+  <td>&nbsp;</td><td colspan="2"><span style="font-size:90%">The shaded first column for the operators gives the keyboard entry for the operator.<br>The third column for the operators gives the priority for the operation.  Within a priority group, evaluation is left to right.</span></td>
+ </tr>
+</tbody></table>  
+<br><br>
+
+<form method="POST" action="process.php">
+
+<b>Boolean expression</b>: &nbsp;<input type="text" name="expression" size="60" maxlength="90">
+<br><br>
+
+<table cellspacing="0" cellpadding="4" border="0">
+ <tbody><tr align="center">
+  <td width="20">&nbsp;</td><td nowrap=""><span style="font-size:90%">variable order in table:</span>&nbsp;&nbsp;</td><td nowrap=""><span style="font-size:90%"><input type="radio" name="order" value="n" checked="">&nbsp;natural order</span>&nbsp;</td><td nowrap=""><span style="font-size:90%"><input type="radio" name="order" value="a">&nbsp;alphabetical order</span></td>
+  <td width="30">&nbsp;</td><td nowrap=""><span style="font-size:90%">constants:</span>&nbsp;&nbsp;</td><td nowrap=""><span style="font-size:90%"><input type="radio" name="constants" value="T" checked="">&nbsp;T and F</span>&nbsp;</td><td nowrap=""><span style="font-size:90%"><input type="radio" name="constants" value="1">&nbsp;1 and 0</span></td>
+ </tr> 
+</tbody></table>
+<p>
+
+<table width="60%" cellspacing="0" cellpadding="0" border="0">
+ <tbody><tr align="center">
+  <td width="50%"><input type="submit" value="Generate Truth Table"></td><td><input type="reset" value="Clear Boolean Expression"></td>
+ </tr>
+</tbody></table> 
+</p></form>
+
+
+
+                </body></html>
